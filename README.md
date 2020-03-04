@@ -10,7 +10,7 @@ C# ile serial portları üzerinden veri akışını test etmenize yarayan basit,
  - "**< rand/>**" (boşluksuz ve çift tırnak olmadan) ifadesi ile veri gönderirken rastgele sayısal veri gönderme ( sayı aralığı belirlenebilir )
 
 ### Program Görüntüsü
-![image](https://i.hizliresim.com/zy27WR.png)
+![image](https://i.hizliresim.com/172AJj.png)
 
 
 
@@ -19,4 +19,4 @@ C# ile serial portları üzerinden veri akışını test etmenize yarayan basit,
  
 
 ### Program Görüntüsü 
-![image](https://i.hizliresim.com/GGpOqb.png)
+![image](https://i.hizliresim.com/LGYqbo.png)
