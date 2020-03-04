@@ -26,7 +26,7 @@ namespace NHSeriBaglanti
                 serialPort = value;
                 serialPort.DataReceived += SerialPort_DataReceived;
                 UpdateSerialPort();
-                UpdateBaundrate();
+                UpdateBaudrate();
             }
         }
 
@@ -46,19 +46,19 @@ namespace NHSeriBaglanti
             }
         }
 
-        private void UpdateBaundrate(bool hataGoster = false)
+        private void UpdateBaudrate(bool hataGoster = false)
         {
-            if (Delegates.SelectedIndex.Get(cmbBaundrate) != -1)
+            if (Delegates.SelectedIndex.Get(cmbBaudrate) != -1)
             {
-                int baundrate = -1;
-                if (int.TryParse(Delegates.Text.Get(cmbBaundrate), out baundrate))
+                int baudrate = -1;
+                if (int.TryParse(Delegates.Text.Get(cmbBaudrate), out baudrate))
                 {
-                    try { serialPort.BaudRate = baundrate; }
+                    try { serialPort.BaudRate = baudrate; }
                     catch (Exception ex)
                     {
                         if (hataGoster)
                         {
-                            MessageBox.Show("Baundrate ayarlanırken bir hata oluştu!\nHata Açıklaması : " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("Baudrate ayarlanırken bir hata oluştu!\nHata Açıklaması : " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
                 }
@@ -170,12 +170,12 @@ namespace NHSeriBaglanti
 
         private void cmbBaundrate_SelectedIndexChanged(object sender, EventArgs e)
         {
-            UpdateBaundrate(true);
+            UpdateBaudrate(true);
         }
 
         private SeriPortArgs GetUpdatedArgs()
         {
-            return new SeriPortArgs(Delegates.Text.Get(cmbPorts), int.Parse(Delegates.Text.Get(cmbBaundrate)));
+            return new SeriPortArgs(Delegates.Text.Get(cmbPorts), int.Parse(Delegates.Text.Get(cmbBaudrate)));
         }
     }
 }

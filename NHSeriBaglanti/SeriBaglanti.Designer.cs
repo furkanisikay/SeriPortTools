@@ -31,7 +31,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnYenile = new System.Windows.Forms.Button();
             this.lblDurum = new System.Windows.Forms.Label();
-            this.cmbBaundrate = new System.Windows.Forms.ComboBox();
+            this.cmbBaudrate = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cmbPorts = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,7 +46,7 @@
             // 
             this.groupBox2.Controls.Add(this.btnYenile);
             this.groupBox2.Controls.Add(this.lblDurum);
-            this.groupBox2.Controls.Add(this.cmbBaundrate);
+            this.groupBox2.Controls.Add(this.cmbBaudrate);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.cmbPorts);
             this.groupBox2.Controls.Add(this.label3);
@@ -82,13 +82,13 @@
             this.lblDurum.TabIndex = 4;
             this.lblDurum.Text = "Kapalı";
             // 
-            // cmbBaundrate
+            // cmbBaudrate
             // 
-            this.cmbBaundrate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.cmbBaudrate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmbBaundrate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbBaundrate.FormattingEnabled = true;
-            this.cmbBaundrate.Items.AddRange(new object[] {
+            this.cmbBaudrate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBaudrate.FormattingEnabled = true;
+            this.cmbBaudrate.Items.AddRange(new object[] {
             "1200",
             "2400",
             "4800",
@@ -98,20 +98,20 @@
             "57600",
             "115200",
             "230400"});
-            this.cmbBaundrate.Location = new System.Drawing.Point(106, 70);
-            this.cmbBaundrate.Name = "cmbBaundrate";
-            this.cmbBaundrate.Size = new System.Drawing.Size(164, 21);
-            this.cmbBaundrate.TabIndex = 3;
-            this.cmbBaundrate.SelectedIndexChanged += new System.EventHandler(this.cmbBaundrate_SelectedIndexChanged);
+            this.cmbBaudrate.Location = new System.Drawing.Point(106, 70);
+            this.cmbBaudrate.Name = "cmbBaudrate";
+            this.cmbBaudrate.Size = new System.Drawing.Size(164, 21);
+            this.cmbBaudrate.TabIndex = 3;
+            this.cmbBaudrate.SelectedIndexChanged += new System.EventHandler(this.cmbBaundrate_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(35, 73);
+            this.label1.Location = new System.Drawing.Point(41, 73);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 13);
+            this.label1.Size = new System.Drawing.Size(59, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Baundrate : ";
+            this.label1.Text = "Baudrate : ";
             // 
             // cmbPorts
             // 
@@ -188,7 +188,7 @@
         private System.Windows.Forms.PictureBox pboxBaglanti;
         private System.Windows.Forms.Label lblDurum;
         private System.Windows.Forms.Button btnYenile;
-        private System.Windows.Forms.ComboBox cmbBaundrate;
+        private System.Windows.Forms.ComboBox cmbBaudrate;
         private System.Windows.Forms.Label label1;
     }
 }

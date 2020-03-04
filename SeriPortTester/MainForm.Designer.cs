@@ -337,6 +337,7 @@
             // 
             // btnAlnTemizle
             // 
+            this.btnAlnTemizle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAlnTemizle.Location = new System.Drawing.Point(165, 386);
             this.btnAlnTemizle.Name = "btnAlnTemizle";
             this.btnAlnTemizle.Size = new System.Drawing.Size(75, 23);
@@ -380,6 +381,7 @@
             // 
             // btnGondTemizle
             // 
+            this.btnGondTemizle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnGondTemizle.Location = new System.Drawing.Point(163, 386);
             this.btnGondTemizle.Name = "btnGondTemizle";
             this.btnGondTemizle.Size = new System.Drawing.Size(75, 23);
