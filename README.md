@@ -9,7 +9,7 @@ C# ile serial portları üzerinden veri akışını test etmenize yarayan basit,
  - Belirlenen periyoduk süreye göre veri gönderimini tekrarlama
  - "**< rand/>**" (boşluksuz ve çift tırnak olmadan) ifadesi ile veri gönderirken rastgele sayısal veri gönderme ( sayı aralığı belirlenebilir )
 
-> Program Görüntüsü
+### Program Görüntüsü
 ![image](https://i.hizliresim.com/zy27WR.png)
 
 
@@ -18,5 +18,5 @@ C# ile serial portları üzerinden veri akışını test etmenize yarayan basit,
  * Kullanıcı denetimi türünde olan, seri bağlantı için gerekli olan baudrate, portname gibi bilgileri kullanıcıdan almamızı kolaylaştıran bir program.
  
 
-> Program Görüntüsü
+### Program Görüntüsü 
 ![image](https://i.hizliresim.com/GGpOqb.png)
