@@ -1,4 +1,4 @@
-﻿using Optimizasyon;
+﻿using NHTools;
 using System;
 using System.Drawing;
 using System.IO.Ports;
@@ -135,7 +135,7 @@ namespace NHSeriBaglanti
 
         public void PortlarıYenile()
         {
-            Optimizasyon.Optimizasyon.Delagate(cmbPorts, () => { cmbPorts.Items.Clear(); cmbPorts.Items.AddRange(SerialPort.GetPortNames()); });
+            Optimizasyon.Delagate(cmbPorts, () => { cmbPorts.Items.Clear(); cmbPorts.Items.AddRange(SerialPort.GetPortNames()); });
         }
 
         private void SerialPort_DataReceived(object sender, SerialDataReceivedEventArgs e)

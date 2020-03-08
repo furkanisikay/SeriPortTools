@@ -1,4 +1,4 @@
-﻿using Optimizasyon;
+﻿using NHTools;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -43,12 +43,12 @@ namespace SeriPortTester
                 MessageBox.Show("Gönderilecek veri boş olamaz!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            Optimizasyon.Optimizasyon.ArkaplandaCalistir(() => VeriyiGonder());
+            Optimizasyon.ArkaplandaCalistir(() => VeriyiGonder());
         }
 
         private void tmrVeriGonder_Tick(object sender, EventArgs e)
         {
-            Optimizasyon.Optimizasyon.ArkaplandaCalistir(() => VeriyiGonder());
+            Optimizasyon.ArkaplandaCalistir(() => VeriyiGonder());
         }
 
         private void VeriyiGonder(bool hataGoster = false)
@@ -91,7 +91,7 @@ namespace SeriPortTester
 
         private void AppendText(RichTextBox rtxt, string text)
         {
-            Optimizasyon.Optimizasyon.Delagate(rtxt, () => { rtxt.AppendText(string.Format("{0} - {1}\n", DateTime.Now.ToLongTimeString(), text)); });
+            Optimizasyon.Delagate(rtxt, () => { rtxt.AppendText(string.Format("{0} - {1}\n", DateTime.Now.ToLongTimeString(), text)); });
         }
 
         private void seriBaglanti1_PortAcildi(object sender, NHSeriBaglanti.SeriPortArgs e)
@@ -119,17 +119,17 @@ namespace SeriPortTester
 
         private void btnAlnTemizle_Click(object sender, EventArgs e)
         {
-            Optimizasyon.Optimizasyon.Delagate(rtxtAlınan, () => { rtxtAlınan.Clear(); });
+            Optimizasyon.Delagate(rtxtAlınan, () => { rtxtAlınan.Clear(); });
         }
 
         private void btnGondTemizle_Click(object sender, EventArgs e)
         {
-            Optimizasyon.Optimizasyon.Delagate(rtxtGonderilen, () => { rtxtGonderilen.Clear(); });
+            Optimizasyon.Delagate(rtxtGonderilen, () => { rtxtGonderilen.Clear(); });
         }
 
         private void MainForm_Shown(object sender, EventArgs e)
         {
-            Optimizasyon.Optimizasyon.Delagate(seriBaglanti1, () => { seriBaglanti1.PortlarıYenile(); });
+            Optimizasyon.Delagate(seriBaglanti1, () => { seriBaglanti1.PortlarıYenile(); });
             
         }
     }
